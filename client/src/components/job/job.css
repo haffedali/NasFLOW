@@ -1,0 +1,13 @@
+.jobBox {
+    width: 85%;
+    height: 60px;
+    outline: solid;
+}
+
+.department {
+    position: relative;
+}
+
+.status {
+    background-color: greenyellow;
+}
