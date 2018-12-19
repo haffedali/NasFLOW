@@ -7,9 +7,6 @@ class App extends Component {
     return (
       <div className="App">
         <Job />
-        {/* <header className="App-header">
-          NASFLOW
-        </header> */}
       </div>
     );
   }
