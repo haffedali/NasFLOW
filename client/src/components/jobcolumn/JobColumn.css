@@ -1,0 +1,7 @@
+.job-column {
+    position:relative;
+    top: 30px;
+    height: 700px;
+    width: 80%;
+    outline: dotted;
+}
