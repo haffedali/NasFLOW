@@ -1,22 +1,20 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-import Job from "./components/job"
-import JobColumn from "./components/jobcolumn"
+import Job from "./components/job";
+import Projects from "./pages/projects";
 
-class App extends Component {
-  render() {
-    return (
+const App = () => (
       <Router>
         <div>
           <Switch>
-            <Route exact path="/" component={JobColumn} />
+            <Route component={Projects} />
+            <Route exact path="/" component={Projects} />
             <Route exact path="/job" component={Job} />
           </Switch>
         </div>
       </Router>
-    );
-  }
-}
+
+)
 
 export default App;

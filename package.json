@@ -1,0 +1,27 @@
+{
+  "name": "nasflow",
+  "version": "1.0.0",
+  "description": "Work flow management MVC for nasco electric signs",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "seed": "node scripts/seedDB.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haffedali/NasFLOW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haffedali/NasFLOW/issues"
+  },
+  "homepage": "https://github.com/haffedali/NasFLOW#readme"
+}
