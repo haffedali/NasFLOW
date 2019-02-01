@@ -22,7 +22,9 @@ class Job extends Component {
                 this.setState({
                     jobs: res.data
                 }))
-                .catch(err => console.log(err))    
+                .catch(err => {
+                    return console.log(err);
+                })    
             
     }
 
@@ -35,7 +37,7 @@ class Job extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        if (this.state.title && this.state.author){
+        if (this.state.title && this.state.body){
             API.postJob({
                 title: this.state.title,
                 body: this.state.body
@@ -43,6 +45,10 @@ class Job extends Component {
               .then(res => this.loadJobs())
               .catch(err => console.log(err));
         }
+        this.setState({
+            title: '',
+            body: ''
+        })
     }
     render(){
         return(
